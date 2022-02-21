@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Audio Player</title>
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="audio.css" />
+  </head>
+
+  <body>
+    <div class="module-border-wrap">
+      <div class="container">
+        <div id="audioimg">
+          <img class="cover" />
+        </div>
+
+        <div id="audioplayer">
+          <div id="info">
+            <span class="artist"></span>-<span class="title"></span>
+          </div>
+          <div id="tracker">
+            <div id="progressbar">
+              <span id="progress"></span>
+            </div>
+
+            <span id="duration"></span>
+          </div>
+
+          <br />
+          <div id="audiobuttons">
+            <button id="prevbtn"></button>
+            <button id="playbtn"></button>
+            <button id="pausebtn"></button>
+            <button id="stopbtn"></button>
+            <button id="nextbtn"></button>
+          </div>
+
+          <div class="clearfix"></div>
+          <div id="vol">
+            <span
+              class="glyphicon glyphicon-volume-up"
+              aria-hidden="true"
+            ></span>
+            <input id="volume" type="range" min="0" max="10" value="5" />
+          </div>
+          <div class="clearfix"></div>
+
+          <p id="playlisthead">Playlist</p>
+          <ul id="playlist">
+            <li
+              song="media/Castle.mp3"
+              cover="cover.jpg"
+              artist="N3WPORT feat. Leila Pari"
+            >
+              Castle.mp3
+            </li>
+            <li
+              song="media/Dancing On The Moon.mp3"
+              cover="cover.jpg"
+              artist="Unknwon Brain feat. Luke Burr"
+            >
+              Dancing On The Moon.mp3
+            </li>
+            <li
+              song="media/The Revolution.mp3"
+              cover="cover.jpg"
+              artist="Egzod & Neoni"
+            >
+              The Revolution.mp3
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="audio.js" type="text/javascript"></script>
+  </body>
+</html>
